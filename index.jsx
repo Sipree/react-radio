@@ -1,6 +1,7 @@
 'use strict';
 
 var React      = require('react')
+var ReactDOM    = require('react-dom')
 var RadioGroup = require('./src')
 
 var items = [
@@ -56,4 +57,4 @@ var App = React.createClass({
     }
 })
 
-React.render(<App />, document.getElementById('content'))
+ReactDOM.render(<App />, document.getElementById('content'))
