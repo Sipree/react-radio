@@ -1,7 +1,8 @@
 'use strict';
 
-var React = require('react')
-var assign = require('object-assign')
+var React = require('react');
+var ReactDOM = require('react-dom');
+var assign = require('object-assign');
 
 function emptyFn(){}
 
@@ -64,7 +65,7 @@ module.exports = React.createClass({
     },
 
     getRadios: function() {
-        return this.getDOMNode().querySelectorAll('input[type="radio"]')
+        return ReactDOM.getDOMNode(this).querySelectorAll('input[type="radio"]')
     },
 
     getDefaultProps: function() {
