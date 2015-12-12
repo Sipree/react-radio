@@ -121,7 +121,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 
 	    getRadios: function() {
-	        return ReactDOM.getDOMNode(this).querySelectorAll('input[type="radio"]')
+	        return ReactDOM.findDOMNode(this).querySelectorAll('input[type="radio"]')
 	    },
 
 	    getDefaultProps: function() {
